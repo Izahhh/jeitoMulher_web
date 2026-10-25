@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeito de Mulher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Jeito de Mulher</a>
+            <nav class="nav-menu">
+                <a href="#home">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#booking">Agendamento</a>
+                <a href="#shop">Produtos</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <div class="user-actions">
+                <button id="cart-btn" class="icon-btn" title="Carrinho">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count">0</span>
+                </button>
+                <button id="auth-btn" class="btn-primary">Entrar / Cadastrar</button>
+                <div id="user-info" class="hidden">
+                    <span id="user-greeting">Olá, Usuário</span>
+                    <button id="logout-btn" class="icon-btn" title="Sair"><i class="fa-solid fa-right-from-bracket"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Sua Beleza em Sua Melhor Versão</h1>
+            <p>Especialistas em corte, coloração, tratamentos capilares profundos e produtos de alta performance.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn-primary">Agendar Horário</a>
+                <a href="#shop" class="btn-secondary">Comprar Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-scissors"></i>
+                    <h3>Corte & Styling</h3>
+                    <p>Cortes personalizados visando o formato do rosto e textura natural dos fios.</p>
+                    <span class="price">A partir de R$ 90,00</span>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>Coloração & Mechas</h3>
+                    <p>Técnicas modernas de luzes, balayage e coloração global com produtos hidratantes.</p>
+                    <span class="price">A partir de R$ 180,00</span>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-spa"></i>
+                    <h3>Tratamentos Capilares</h3>
+                    <p>Reconstrução profunda, nutrição e cronograma capilar exclusivo.</p>
+                    <span class="price">A partir de R$ 120,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="booking" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Agende seu Horário</h2>
+            <form id="booking-form" class="form-grid">
+                <div class="form-group">
+                    <label for="service-select">Escolha o Serviço</label>
+                    <select id="service-select" required>
+                        <option value="">Selecione...</option>
+                        <option value="Corte & Styling (R$ 90)">Corte & Styling - R$ 90,00</option>
+                        <option value="Coloração & Mechas (R$ 180)">Coloração & Mechas - R$ 180,00</option>
+                        <option value="Tratamento Capilar (R$ 120)">Tratamento Capilar - R$ 120,00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="professional-select">Profissional</label>
+                    <select id="professional-select" required>
+                        <option value="">Selecione...</option>
+                        <option value="Juliana Lopes (Master Stylist)">Juliana Lopes (Master Stylist)</option>
+                        <option value="Marcos Vinicius (Colorista)">Marcos Vinicius (Colorista)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="booking-date">Data</label>
+                    <input type="date" id="booking-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-time">Horário</label>
+                    <select id="booking-time" required>
+                        <option value="">Selecione...</option>
+                        <option value="09:00">09:00</option>
+                        <option value="11:00">11:30</option>
+                        <option value="14:00">14:30</option>
+                        <option value="16:30">16:30</option>
+                    </select>
+                </div>
+                <div class="form-full">
+                    <button type="submit" class="btn-primary full-width">Confirmar Agendamento</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Loja de Produtos -->
+    <section id="shop" class="section">
+        <div class="container">
+            <h2 class="section-title">Produtos para Home Care</h2>
+            <div id="product-grid" class="product-grid">
+                <!-- Gerado via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div>
+                <h3>Lustre & Cachos</h3>
+                <p>Cuidando da sua autoestima todos os dias.</p>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p><i class="fa-solid fa-phone"></i> (11) 98765-4321</p>
+                <p><i class="fa-solid fa-location-dot"></i> Rua das Acácias, 120 - São Paulo, SP</p>
+            </div>
+            <div>
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lustre & Cachos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Autenticação (Login / Cadastro) -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div class="auth-tabs">
+                <button id="tab-login" class="tab-btn active">Entrar</button>
+                <button id="tab-register" class="tab-btn">Cadastrar</button>
+            </div>
+
+            <!-- Formulário de Login -->
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Entrar</button>
+            </form>
+
+            <!-- Formulário de Cadastro -->
+            <form id="register-form" class="auth-form hidden">
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" id="reg-name" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" id="reg-password" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Criar Conta</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal do Carrinho -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-cart" class="close">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items" class="cart-items-list">
+                <!-- Itens do carrinho -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <strong id="cart-total-price">R$ 0,00</strong></p>
+                <button id="checkout-btn" class="btn-primary full-width">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
