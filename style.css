@@ -440,3 +440,19 @@ body {
     justify-content: space-between;
     margin-bottom: 1rem;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a imagem e o texto */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--marrom);
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 50px; /* Altura ideal para caber no header que tem 70px */
+    width: auto;
+    object-fit: contain;
+}

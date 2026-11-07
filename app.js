@@ -27,9 +27,19 @@ const registerForm = document.getElementById('register-form');
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
-    renderProducts();
+    // Só renderiza os produtos se a div existir na página atual
+    if (document.getElementById('product-grid')) {
+        renderProducts();
+    }
     updateAuthUI();
-
+    
+    // Só adiciona evento de agendamento se o formulário existir na página
+    const bookingForm = document.getElementById('booking-form');
+    if (bookingForm) {
+        bookingForm.addEventListener('submit', (e) => {
+            // ... seu código de agendamento atual ...
+        });
+    }
     // Eventos de Modais
     authBtn.addEventListener('click', () => authModal.style.display = 'flex');
     closeModal.addEventListener('click', () => authModal.style.display = 'none');
