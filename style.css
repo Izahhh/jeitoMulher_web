@@ -28,7 +28,6 @@ body {
     padding: 0 20px;
 }
 
-/* Cabeçalho e Navegação */
 .header {
     background-color: var(--branco);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -36,11 +35,10 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    height: 70px;
+    height: 90px; /* Aumentado de 70px para 90px */
     display: flex;
     align-items: center;
 }
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -59,7 +57,7 @@ body {
 }
 
 .logo-img {
-    height: 50px;
+    height: 75px; /* Aumentado de 50px para 75px */
     width: auto;
     object-fit: contain;
 }
@@ -76,7 +74,6 @@ body {
     color: var(--marrom-claro);
 }
 
-/* Seção Hero (Banner) */
 .hero {
     background: linear-gradient(rgba(92, 64, 51, 0.7), rgba(92, 64, 51, 0.7)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200') center/cover;
     height: 100vh;
@@ -84,7 +81,7 @@ body {
     align-items: center;
     text-align: center;
     color: var(--branco);
-    margin-top: 70px;
+    margin-top: 90px; /* Aumentado de 70px para 90px para acompanhar o novo tamanho do cabeçalho */
 }
 
 .hero h1 {
