@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Jeito de Mulher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Logo Jeito de Mulher" class="logo-img">
+                Jeito de Mulher
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre a Empresa</a>
+                <a href="produtos.html">Serviços e Produtos</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <div class="user-actions">
+                <button id="cart-btn" class="icon-btn" title="Carrinho">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count">0</span>
+                </button>
+                <button id="auth-btn" class="btn-primary">Entrar / Cadastrar</button>
+                <div id="user-info" class="hidden">
+                    <span id="user-greeting">Olá, Usuário</span>
+                    <button id="logout-btn" class="icon-btn" title="Sair"><i class="fa-solid fa-right-from-bracket"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Loja de Produtos -->
+    <section id="shop" class="section" style="margin-top: 70px;">
+        <div class="container">
+            <h2 class="section-title">Produtos para Home Care</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: #666;">Prolongue os resultados do salão na sua casa com nossa linha exclusiva.</p>
+            
+            <!-- AQUI É ONDE O JAVASCRIPT VAI INJETAR OS PRODUTOS -->
+            <div id="product-grid" class="services-grid">
+                <!-- Gerado via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div>
+                <h3>Jeito de Mulher</h3>
+                <p>Cuidando da sua autoestima todos os dias.</p>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p><i class="fa-solid fa-phone"></i> (11) 98765-4321</p>
+                <p><i class="fa-solid fa-location-dot"></i> Rua das Acácias, 120 - São Paulo, SP</p>
+            </div>
+            <div>
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jeito de Mulher. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Autenticação -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div class="auth-tabs">
+                <button id="tab-login" class="tab-btn active">Entrar</button>
+                <button id="tab-register" class="tab-btn">Cadastrar</button>
+            </div>
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Entrar</button>
+            </form>
+            <form id="register-form" class="auth-form hidden">
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" id="reg-name" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" id="reg-password" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Criar Conta</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal do Carrinho -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-cart" class="close">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items" class="cart-items-list">
+                <!-- Itens do carrinho -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <strong id="cart-total-price">R$ 0,00</strong></p>
+                <button id="checkout-btn" class="btn-primary full-width">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
