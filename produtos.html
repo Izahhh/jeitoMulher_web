@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header class="header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
@@ -22,35 +21,73 @@
                 <a href="portfolio.html">Portfólio</a>
                 <a href="contato.html">Contato</a>
             </nav>
-            <div class="user-actions">
-                <button id="cart-btn" class="icon-btn" title="Carrinho">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span id="cart-count">0</span>
-                </button>
-                <button id="auth-btn" class="btn-primary">Entrar / Cadastrar</button>
-                <div id="user-info" class="hidden">
-                    <span id="user-greeting">Olá, Usuário</span>
-                    <button id="logout-btn" class="icon-btn" title="Sair"><i class="fa-solid fa-right-from-bracket"></i></button>
-                </div>
-            </div>
         </div>
     </header>
 
-    <!-- Loja de Produtos -->
-    <section id="shop" class="section" style="margin-top: 70px;">
+    <section class="section bg-light" style="margin-top: 70px;">
         <div class="container">
-            <h2 class="section-title">Produtos para Home Care</h2>
-            <p style="text-align: center; margin-bottom: 3rem; color: #666;">Prolongue os resultados do salão na sua casa com nossa linha exclusiva.</p>
+            <h2 class="section-title">Nossa Linha de Produtos</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: #666;">Prolongue os resultados do salão na sua casa com nossa linha exclusiva de Home Care.</p>
             
-            <!-- AQUI É ONDE O JAVASCRIPT VAI INJETAR OS PRODUTOS -->
-            <div id="product-grid" class="services-grid">
-                <!-- Gerado via JavaScript -->
+            <div class="services-grid">
+                <!-- Produto 1 -->
+                <div class="service-card" style="text-align: center; padding: 1.5rem;">
+                    <img src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?w=500" alt="Shampoo Revitalizante" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Shampoo Revitalizante 300ml</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Limpeza suave que devolve o brilho natural dos fios sem ressecar.</p>
+                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 45,90</span>
+                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="service-card" style="text-align: center; padding: 1.5rem;">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500" alt="Condicionador Nutritivo" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Condicionador Nutritivo 300ml</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Selamento de cutículas, maciez e hidratação profunda para o dia a dia.</p>
+                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 49,90</span>
+                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="service-card" style="text-align: center; padding: 1.5rem;">
+                    <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?w=500" alt="Máscara de Reconstrução" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Máscara de Hidratação 250g</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Tratamento intensivo de salão para cabelos danificados e quebradiços.</p>
+                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 75,50</span>
+                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="service-card" style="text-align: center; padding: 1.5rem;">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500" alt="Creme de Pentear" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Creme de Pentear 200ml</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Controle absoluto de frizz, proteção térmica e definição prolongada.</p>
+                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 38,00</span>
+                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="service-card" style="text-align: center; padding: 1.5rem;">
+                    <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500" alt="Mousse Modelador" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Mousse Modelador 150ml</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Volume, fixação leve e modelagem perfeita sem ressecar os fios.</p>
+                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 55,00</span>
+                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="service-card" style="text-align: center; padding: 1.5rem;">
+                    <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=500" alt="Óleo Reparador" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Óleo Reparador Argan 60ml</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Brilho intenso, maciez e reparação imediata de pontas duplas.</p>
+                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 54,00</span>
+                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer id="contact" class="footer">
+    <footer class="footer">
         <div class="container footer-content">
             <div>
                 <h3>Jeito de Mulher</h3>
@@ -74,59 +111,5 @@
             <p>&copy; 2026 Jeito de Mulher. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <!-- Modal de Autenticação -->
-    <div id="auth-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <div class="auth-tabs">
-                <button id="tab-login" class="tab-btn active">Entrar</button>
-                <button id="tab-register" class="tab-btn">Cadastrar</button>
-            </div>
-            <form id="login-form" class="auth-form">
-                <div class="form-group">
-                    <label>E-mail</label>
-                    <input type="email" id="login-email" required>
-                </div>
-                <div class="form-group">
-                    <label>Senha</label>
-                    <input type="password" id="login-password" required>
-                </div>
-                <button type="submit" class="btn-primary full-width">Entrar</button>
-            </form>
-            <form id="register-form" class="auth-form hidden">
-                <div class="form-group">
-                    <label>Nome Completo</label>
-                    <input type="text" id="reg-name" required>
-                </div>
-                <div class="form-group">
-                    <label>E-mail</label>
-                    <input type="email" id="reg-email" required>
-                </div>
-                <div class="form-group">
-                    <label>Senha</label>
-                    <input type="password" id="reg-password" required>
-                </div>
-                <button type="submit" class="btn-primary full-width">Criar Conta</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Modal do Carrinho -->
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-cart" class="close">&times;</span>
-            <h2>Seu Carrinho</h2>
-            <div id="cart-items" class="cart-items-list">
-                <!-- Itens do carrinho -->
-            </div>
-            <div class="cart-total">
-                <p>Total: <strong id="cart-total-price">R$ 0,00</strong></p>
-                <button id="checkout-btn" class="btn-primary full-width">Finalizar Compra</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="app.js"></script>
 </body>
 </html>
