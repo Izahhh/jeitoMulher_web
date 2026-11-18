@@ -609,3 +609,64 @@ body {
 @media (prefers-reduced-motion: reduce) {
     .contact-banner::before, .contact-banner::after, .btn-whats { animation: none; }
 }
+
+/* =========================================================
+   NOVO — Sobre: hero com imagem de fundo
+   ========================================================= */
+.about-hero {
+    margin-top: 90px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--marrom); /* cor de segurança se a imagem não carregar */
+    background-image:
+        linear-gradient(rgba(92,64,51,.78), rgba(60,40,30,.82)),
+        url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* efeito parallax ao rolar */
+}
+.about-hero h1 { font-size: 3.4rem; margin-bottom: 1.2rem; }
+.about-hero .divider {
+    width: 70px; height: 3px; margin: 0 auto 1.6rem;
+    background: var(--nude); border-radius: 3px;
+}
+.about-hero p { max-width: 780px; margin: 0 auto; font-size: 1.15rem; line-height: 1.8; opacity: .95; }
+.about-hero strong { color: var(--nude); }
+
+@media (max-width: 768px) {
+    .about-hero { margin-top: 140px; min-height: 60vh; background-attachment: scroll; }
+    .about-hero h1 { font-size: 2.4rem; }
+}
+
+/* =========================================================
+   NOVO — Imagem nos cards de serviço
+   ========================================================= */
+.treat-card { overflow: hidden; }
+.treat-img {
+    position: relative;
+    height: 180px;
+    margin: -1.6rem -1.6rem 1.8rem;
+    background: linear-gradient(135deg, var(--marrom), var(--marrom-claro)); /* fallback */
+}
+.treat-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform .6s ease;
+}
+.treat-card:hover .treat-img img { transform: scale(1.1); }
+.treat-img::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(60,40,30,.35), transparent 55%);
+    pointer-events: none;
+}
+.treat-img .treat-tag {
+    position: absolute; top: 12px; right: 12px; z-index: 1;
+    background: rgba(255,255,255,.92);
+}
+.treat-img .treat-icon {
+    position: absolute; left: 1.2rem; bottom: -22px; z-index: 2;
+    background: var(--branco);
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
