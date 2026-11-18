@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Jeito de Mulher</title>
-        <link rel="icon" href="icon.png" type="image/png">
-
+    <title>Serviços e Produtos - Jeito de Mulher</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,7 +16,6 @@
         <div class="container nav-container">
             <a href="index.html" class="logo">
                 <img src="logo.jpg" alt="Logo Jeito de Mulher" class="logo-img">
-                
             </a>
             <nav class="nav-menu">
                 <a href="index.html">Início</a>
@@ -26,65 +27,252 @@
         </div>
     </header>
 
-    <section class="section bg-light" style="margin-top: 90px;">
+    <!-- Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Serviços e Produtos</h1>
+            <p>Escolha o serviço ideal para o seu cabelo e leve o cuidado do salão para casa.</p>
+            <div class="anchor-links">
+                <a href="#servicos">Serviços</a>
+                <a href="#produtos">Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-sub">Filtre por categoria e agende em um clique.</p>
+
+            <div class="filter-bar" role="tablist" aria-label="Categorias de serviços">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="cortes"><i class="fa-solid fa-scissors"></i> Cortes</button>
+                <button class="filter-btn" data-filter="luzes"><i class="fa-solid fa-sun"></i> Luzes</button>
+                <button class="filter-btn" data-filter="coloracao"><i class="fa-solid fa-palette"></i> Colorações</button>
+            </div>
+
+            <div class="treat-grid" id="treat-grid">
+                <article class="treat-card" data-cat="cortes">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-scissors"></i></span>
+                        <span class="treat-tag">Cortes</span>
+                    </div>
+                    <h3>Corte Feminino</h3>
+                    <p>Corte personalizado para o formato do rosto e a textura dos fios.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 1h</span>
+                        <span class="price">a partir de R$ 90,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="cortes">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-scissors"></i></span>
+                        <span class="treat-tag">Cortes</span>
+                    </div>
+                    <h3>Corte + Escova</h3>
+                    <p>Corte com finalização em escova modelada para sair pronta.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 1h30</span>
+                        <span class="price">a partir de R$ 130,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="cortes">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-scissors"></i></span>
+                        <span class="treat-tag">Cortes</span>
+                    </div>
+                    <h3>Corte Infantil</h3>
+                    <p>Atendimento cuidadoso e divertido para as pequenas, até 12 anos.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 40min</span>
+                        <span class="price">a partir de R$ 60,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="cortes">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-scissors"></i></span>
+                        <span class="treat-tag">Cortes</span>
+                    </div>
+                    <h3>Franja e Acabamento</h3>
+                    <p>Ajuste de franja, pontas e contornos entre um corte e outro.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 20min</span>
+                        <span class="price">a partir de R$ 35,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="luzes">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-sun"></i></span>
+                        <span class="treat-tag">Luzes</span>
+                    </div>
+                    <h3>Mechas Tradicionais</h3>
+                    <p>Luzes clássicas com descoloração controlada e tonalização.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 3h</span>
+                        <span class="price">a partir de R$ 280,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="luzes">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-sun"></i></span>
+                        <span class="treat-tag">Luzes</span>
+                    </div>
+                    <h3>Balayage</h3>
+                    <p>Esfumado natural, feito à mão, com transição suave da raiz às pontas.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 4h</span>
+                        <span class="price">a partir de R$ 450,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="luzes">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-sun"></i></span>
+                        <span class="treat-tag">Luzes</span>
+                    </div>
+                    <h3>Morena Iluminada</h3>
+                    <p>Luzes em tons de mel e caramelo que iluminam sem perder a profundidade.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 4h</span>
+                        <span class="price">a partir de R$ 520,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="luzes">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-sun"></i></span>
+                        <span class="treat-tag">Luzes</span>
+                    </div>
+                    <h3>Platinado</h3>
+                    <p>Descoloração completa com matização para um loiro frio e uniforme.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 5h</span>
+                        <span class="price">a partir de R$ 600,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="coloracao">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-palette"></i></span>
+                        <span class="treat-tag">Coloração</span>
+                    </div>
+                    <h3>Coloração Global</h3>
+                    <p>Cor uniforme em todo o comprimento, com produtos que hidratam.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 2h</span>
+                        <span class="price">a partir de R$ 180,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="coloracao">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-palette"></i></span>
+                        <span class="treat-tag">Coloração</span>
+                    </div>
+                    <h3>Retoque de Raiz</h3>
+                    <p>Cobertura de brancos e crescimento para manter a cor sempre perfeita.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 1h30</span>
+                        <span class="price">a partir de R$ 120,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="coloracao">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-palette"></i></span>
+                        <span class="treat-tag">Coloração</span>
+                    </div>
+                    <h3>Tonalização</h3>
+                    <p>Renova o brilho e corrige o tom sem alterar a base do cabelo.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 1h</span>
+                        <span class="price">a partir de R$ 90,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+                <article class="treat-card" data-cat="coloracao">
+                    <div class="treat-top">
+                        <span class="treat-icon"><i class="fa-solid fa-palette"></i></span>
+                        <span class="treat-tag">Coloração</span>
+                    </div>
+                    <h3>Coloração Fantasia</h3>
+                    <p>Rosa, azul, lilás e outros tons vibrantes para quem gosta de ousar.</p>
+                    <div class="treat-meta">
+                        <span><i class="fa-regular fa-clock"></i> 3h</span>
+                        <span class="price">a partir de R$ 250,00</span>
+                    </div>
+                    <a href="index.html#booking" class="btn-primary full-width">Agendar</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="section">
         <div class="container">
             <h2 class="section-title">Nossa Linha de Produtos</h2>
-            <p style="text-align: center; margin-bottom: 3rem; color: #666;">Prolongue os resultados do salão na sua casa com nossa linha exclusiva de Home Care.</p>
-            
+            <p class="section-sub">Prolongue os resultados do salão na sua casa com nossa linha exclusiva de Home Care.</p>
             <div class="services-grid">
-                <!-- Produto 1 -->
-                <div class="service-card" style="text-align: center; padding: 1.5rem;">
-                    <img src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?w=500" alt="Shampoo Revitalizante" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>Shampoo Revitalizante 300ml</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Limpeza suave que devolve o brilho natural dos fios sem ressecar.</p>
-                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 45,90</span>
-                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
-                </div>
-
-                <!-- Produto 2 -->
-                <div class="service-card" style="text-align: center; padding: 1.5rem;">
-                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500" alt="Condicionador Nutritivo" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>Condicionador Nutritivo 300ml</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Selamento de cutículas, maciez e hidratação profunda para o dia a dia.</p>
-                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 49,90</span>
-                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
-                </div>
-
-                <!-- Produto 3 -->
-                <div class="service-card" style="text-align: center; padding: 1.5rem;">
-                    <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?w=500" alt="Máscara de Reconstrução" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>Máscara de Hidratação 250g</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Tratamento intensivo de salão para cabelos danificados e quebradiços.</p>
-                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 75,50</span>
-                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
-                </div>
-
-                <!-- Produto 4 -->
-                <div class="service-card" style="text-align: center; padding: 1.5rem;">
-                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500" alt="Creme de Pentear" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>Creme de Pentear 200ml</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Controle absoluto de frizz, proteção térmica e definição prolongada.</p>
-                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 38,00</span>
-                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
-                </div>
-
-                <!-- Produto 5 -->
-                <div class="service-card" style="text-align: center; padding: 1.5rem;">
-                    <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500" alt="Mousse Modelador" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>Mousse Modelador 150ml</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Volume, fixação leve e modelagem perfeita sem ressecar os fios.</p>
-                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 55,00</span>
-                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
-                </div>
-
-                <!-- Produto 6 -->
-                <div class="service-card" style="text-align: center; padding: 1.5rem;">
-                    <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=500" alt="Óleo Reparador" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>Óleo Reparador Argan 60ml</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem; min-height: 40px;">Brilho intenso, maciez e reparação imediata de pontas duplas.</p>
-                    <span class="price" style="display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">R$ 54,00</span>
-                    <a href="contato.html" class="btn-secondary full-width" style="display: block; text-decoration: none;">Tenho Interesse</a>
-                </div>
+                <article class="product-card">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?w=500" alt="Shampoo Revitalizante"></div>
+                    <div class="product-body">
+                        <h3>Shampoo Revitalizante 300ml</h3>
+                        <p>Limpeza suave que devolve o brilho natural dos fios sem ressecar.</p>
+                        <span class="price">R$ 45,90</span>
+                        <a href="contato.html" class="btn-secondary full-width">Tenho Interesse</a>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500" alt="Condicionador Nutritivo"></div>
+                    <div class="product-body">
+                        <h3>Condicionador Nutritivo 300ml</h3>
+                        <p>Selamento de cutículas, maciez e hidratação profunda para o dia a dia.</p>
+                        <span class="price">R$ 49,90</span>
+                        <a href="contato.html" class="btn-secondary full-width">Tenho Interesse</a>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?w=500" alt="Máscara de Hidratação"></div>
+                    <div class="product-body">
+                        <h3>Máscara de Hidratação 250g</h3>
+                        <p>Tratamento intensivo de salão para cabelos danificados e quebradiços.</p>
+                        <span class="price">R$ 75,50</span>
+                        <a href="contato.html" class="btn-secondary full-width">Tenho Interesse</a>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500" alt="Creme de Pentear"></div>
+                    <div class="product-body">
+                        <h3>Creme de Pentear 200ml</h3>
+                        <p>Controle absoluto de frizz, proteção térmica e definição prolongada.</p>
+                        <span class="price">R$ 38,00</span>
+                        <a href="contato.html" class="btn-secondary full-width">Tenho Interesse</a>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500" alt="Mousse Modelador"></div>
+                    <div class="product-body">
+                        <h3>Mousse Modelador 150ml</h3>
+                        <p>Volume, fixação leve e modelagem perfeita sem ressecar os fios.</p>
+                        <span class="price">R$ 55,00</span>
+                        <a href="contato.html" class="btn-secondary full-width">Tenho Interesse</a>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=500" alt="Óleo Reparador"></div>
+                    <div class="product-body">
+                        <h3>Óleo Reparador Argan 60ml</h3>
+                        <p>Brilho intenso, maciez e reparação imediata de pontas duplas.</p>
+                        <span class="price">R$ 54,00</span>
+                        <a href="contato.html" class="btn-secondary full-width">Tenho Interesse</a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -113,5 +301,31 @@
             <p>&copy; 2026 Jeito de Mulher. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        // Filtro de serviços por categoria
+        const buttons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.treat-card');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                let i = 0;
+                cards.forEach(card => {
+                    const show = filter === 'all' || card.dataset.cat === filter;
+                    card.classList.toggle('is-hidden', !show);
+                    if (show) {
+                        // reinicia a animação de entrada com pequeno atraso escalonado
+                        card.style.animation = 'none';
+                        card.offsetHeight;
+                        card.style.animation = '';
+                        card.style.animationDelay = (i++ * 0.06) + 's';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

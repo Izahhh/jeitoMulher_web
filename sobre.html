@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - Jeito de Mulher</title>
-        <link rel="icon" href="icon.png" type="image/png">
-
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,7 +16,6 @@
         <div class="container nav-container">
             <a href="index.html" class="logo">
                 <img src="logo.jpg" alt="Logo Jeito de Mulher" class="logo-img">
-                
             </a>
             <nav class="nav-menu">
                 <a href="index.html">Início</a>
@@ -26,26 +27,26 @@
         </div>
     </header>
 
-    <section class="section" style="margin-top: 70px;">
+    <section class="section" style="margin-top: 90px;">
         <div class="container">
-            <h2 class="section-title">Nossa História</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; line-height: 1.6;">
+            <h2 class="section-title reveal">Nossa História</h2>
+            <p class="about-intro reveal" style="--delay: .15s;">
                 A <strong>Jeito de Mulher</strong> nasceu com o propósito de elevar a autoestima e realçar a beleza única de cada cliente. Fundada por especialistas apaixonados por estética capilar, nossa empresa se tornou referência na região por unir técnicas avançadas, atendimento acolhedor e produtos de altíssima qualidade.
             </p>
-            
+
             <div class="services-grid">
-                <div class="service-card" style="text-align: center;">
-                    <i class="fa-solid fa-bullseye fa-3x" style="color: var(--marrom); margin-bottom: 1rem;"></i>
+                <div class="topic-card reveal" style="--delay: 0s;">
+                    <div class="topic-icon"><i class="fa-solid fa-bullseye"></i></div>
                     <h3>Missão</h3>
                     <p>Proporcionar serviços de beleza de alta qualidade, elevando a autoestima e o bem-estar de nossos clientes através de um atendimento personalizado.</p>
                 </div>
-                <div class="service-card" style="text-align: center;">
-                    <i class="fa-solid fa-eye fa-3x" style="color: var(--marrom); margin-bottom: 1rem;"></i>
+                <div class="topic-card reveal" style="--delay: .2s;">
+                    <div class="topic-icon"><i class="fa-solid fa-eye"></i></div>
                     <h3>Visão</h3>
                     <p>Ser o salão de beleza referência na região, reconhecido pela excelência no atendimento, inovação em tratamentos e satisfação total.</p>
                 </div>
-                <div class="service-card" style="text-align: center;">
-                    <i class="fa-solid fa-gem fa-3x" style="color: var(--marrom); margin-bottom: 1rem;"></i>
+                <div class="topic-card reveal" style="--delay: .4s;">
+                    <div class="topic-icon"><i class="fa-solid fa-gem"></i></div>
                     <h3>Valores</h3>
                     <p>Ética, respeito à diversidade, sustentabilidade, inovação constante e foco absoluto na satisfação e saúde capilar do cliente.</p>
                 </div>
@@ -77,5 +78,20 @@
             <p>&copy; 2026 Jeito de Mulher. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        // Anima os elementos ao entrarem na tela
+        const items = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+                });
+            }, { threshold: 0.2 });
+            items.forEach(el => io.observe(el));
+        } else {
+            items.forEach(el => el.classList.add('visible'));
+        }
+    </script>
 </body>
 </html>
