@@ -1,6 +1,4 @@
-// Filtro de serviços por categoria
 
-// Filtro de serviços por categoria
 const buttons = document.querySelectorAll('.filter-btn');
 const cards = document.querySelectorAll('.treat-card');
 

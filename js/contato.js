@@ -1,6 +1,4 @@
-// Contato: atalhos dos serviços e envio do formulário
 
-// Clicar numa imagem seleciona o serviço no formulário
 const select = document.getElementById('servico');
 document.querySelectorAll('.tile').forEach(tile => {
     tile.addEventListener('click', () => {
@@ -10,7 +8,6 @@ document.querySelectorAll('.tile').forEach(tile => {
     });
 });
 
-// Envio: mostra confirmação animada e link para WhatsApp com a mensagem pronta
 document.getElementById('contact-form').addEventListener('submit', e => {
     e.preventDefault();
     const nome = document.getElementById('nome').value;

@@ -1,6 +1,4 @@
-// Carrossel do portfólio (avança de 3 em 3)
 
-// Slider "de 3 em 3": cada clique/avanço automático troca a página inteira
 (function () {
     const slider   = document.getElementById('work-slider');
     const track    = slider.querySelector('.slider-track');

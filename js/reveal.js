@@ -1,6 +1,4 @@
-// Animação de entrada dos elementos ao rolar a página
 
-// Anima os elementos ao entrarem na tela
 const items = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
