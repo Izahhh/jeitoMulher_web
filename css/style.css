@@ -77,7 +77,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(rgba(92, 64, 51, 0.7), rgba(92, 64, 51, 0.7)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200') center/cover;
+    background: var(--marrom);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -623,6 +623,7 @@ body {
     background-color: var(--marrom); /* cor de segurança se a imagem não carregar */
     background-image:
         linear-gradient(rgba(92,64,51,.78), rgba(60,40,30,.82)),
+        url('../img/salao-interior.jpg'),
         url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600');
     background-size: cover;
     background-position: center;
@@ -782,3 +783,60 @@ body {
 .work-body h3 { margin-bottom: .8rem; }
 .work-body .quote { font-style: italic; color: #555; flex-grow: 1; }
 .work-body .stars { color: #d4a24c; margin-top: 1rem; font-size: .9rem; letter-spacing: 2px; }
+
+/* =========================================================
+   Utilitários (substituem estilos que estavam dentro do HTML)
+   ========================================================= */
+.page-top { margin-top: 90px; }
+.title-left { text-align: left; margin-bottom: 1.5rem; }
+.delay-1 { --delay: .1s; }
+.delay-2 { --delay: .2s; }
+.delay-3 { --delay: .3s; }
+.delay-4 { --delay: .4s; }
+
+/* Imagens de fundo do topo da página inicial (local + endereço alternativo) */
+.hero-img-1 { background-image: url('../img/salao-interior.jpg'), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600'); }
+.hero-img-2 { background-image: url('../img/corte-escova.jpg'), url('https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1600'); }
+.hero-img-3 { background-image: url('../img/penteado-noiva.jpg'), url('https://images.unsplash.com/photo-1523264114838-feca761983c4?w=1600'); }
+.hero-img-4 { background-image: url('../img/reconstrucao-capilar.jpg'), url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1600'); }
+
+/* Link da página atual no menu */
+.nav-menu a.active { color: var(--marrom); border-bottom: 2px solid var(--nude); padding-bottom: 4px; }
+
+/* =========================================================
+   Sobre: Área de Atuação
+   ========================================================= */
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 22px;
+}
+.area-item {
+    display: flex; align-items: flex-start; gap: 18px;
+    padding: 1.5rem;
+    background: var(--nude-claro);
+    border-radius: 14px;
+    border-left: 4px solid var(--nude);
+    transition: transform .3s, border-color .3s, box-shadow .3s;
+}
+.area-item:hover { transform: translateX(8px); border-left-color: var(--marrom); box-shadow: 0 8px 20px rgba(92,64,51,.12); }
+.area-icon {
+    flex-shrink: 0;
+    width: 54px; height: 54px;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    background: var(--marrom); color: var(--branco);
+    font-size: 1.2rem;
+}
+.area-item h3 { color: var(--marrom); margin-bottom: .3rem; }
+.area-item p { font-size: .95rem; color: #555; }
+
+/* Cards que combinam animação de entrada (.reveal) com efeito de hover */
+.info-item.reveal, .area-item.reveal {
+    transition: opacity .8s ease, transform .8s ease, box-shadow .3s, border-color .3s;
+    transition-delay: var(--delay, 0s);
+}
+.info-item.reveal.visible, .area-item.reveal.visible {
+    transition: opacity .8s ease, transform .3s ease, box-shadow .3s, border-color .3s;
+    transition-delay: 0s;
+}

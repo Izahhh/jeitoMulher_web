@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - Jeito de Mulher</title>
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="img/icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="logo.jpg" alt="Logo Jeito de Mulher" class="logo-img">
+                <img src="img/logo.jpg" alt="Logo Jeito de Mulher" class="logo-img">
             </a>
             <nav class="nav-menu">
                 <a href="index.html">Início</a>
-                <a href="sobre.html">Sobre a Empresa</a>
+                <a href="sobre.html" class="active">Sobre a Empresa</a>
                 <a href="produtos.html">Serviços e Produtos</a>
                 <a href="portfolio.html">Nosso Trabalho</a>
                 <a href="contato.html">Contato</a>
@@ -31,8 +31,8 @@
     <section class="about-hero">
         <div class="container">
             <h1 class="reveal">Nossa História</h1>
-            <div class="divider reveal" style="--delay: .1s;"></div>
-            <p class="reveal" style="--delay: .25s;">
+            <div class="divider reveal delay-1"></div>
+            <p class="reveal delay-2">
                 A <strong>Jeito de Mulher</strong> nasceu com o propósito de elevar a autoestima e realçar a beleza única de cada cliente. Fundada por especialistas apaixonados por estética capilar, nossa empresa se tornou referência na região por unir técnicas avançadas, atendimento acolhedor e produtos de altíssima qualidade.
             </p>
         </div>
@@ -44,20 +44,86 @@
             <h2 class="section-title reveal">O que nos move</h2>
 
             <div class="services-grid">
-                <div class="topic-card reveal" style="--delay: 0s;">
+                <div class="topic-card reveal">
                     <div class="topic-icon"><i class="fa-solid fa-bullseye"></i></div>
                     <h3>Missão</h3>
                     <p>Proporcionar serviços de beleza de alta qualidade, elevando a autoestima e o bem-estar de nossos clientes através de um atendimento personalizado.</p>
                 </div>
-                <div class="topic-card reveal" style="--delay: .2s;">
+                <div class="topic-card reveal delay-2">
                     <div class="topic-icon"><i class="fa-solid fa-eye"></i></div>
                     <h3>Visão</h3>
                     <p>Ser o salão de beleza referência na região, reconhecido pela excelência no atendimento, inovação em tratamentos e satisfação total.</p>
                 </div>
-                <div class="topic-card reveal" style="--delay: .4s;">
+                <div class="topic-card reveal delay-4">
                     <div class="topic-icon"><i class="fa-solid fa-gem"></i></div>
                     <h3>Valores</h3>
                     <p>Ética, respeito à diversidade, sustentabilidade, inovação constante e foco absoluto na satisfação e saúde capilar do cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Área de atuação -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Área de Atuação</h2>
+            <p class="section-sub reveal delay-1">Atendemos em São Paulo (SP) e cuidamos de todas as etapas da beleza capilar, do dia a dia aos momentos especiais.</p>
+            <div class="area-grid">
+                <div class="area-item reveal">
+                    <span class="area-icon"><i class="fa-solid fa-scissors"></i></span>
+                    <div><h3>Cabelos</h3><p>Corte, coloração, luzes, escova e finalização para todos os tipos de fio.</p></div>
+                </div>
+                <div class="area-item reveal delay-1">
+                    <span class="area-icon"><i class="fa-solid fa-spa"></i></span>
+                    <div><h3>Tratamentos Capilares</h3><p>Reconstrução, nutrição, cauterização e cronograma capilar exclusivo.</p></div>
+                </div>
+                <div class="area-item reveal delay-2">
+                    <span class="area-icon"><i class="fa-solid fa-ring"></i></span>
+                    <div><h3>Noivas e Eventos</h3><p>Penteados para noivas, madrinhas e festas, com atendimento dedicado.</p></div>
+                </div>
+                <div class="area-item reveal delay-3">
+                    <span class="area-icon"><i class="fa-solid fa-pump-soap"></i></span>
+                    <div><h3>Produtos Home Care</h3><p>Linha de shampoos, máscaras e finalizadores para manter o resultado em casa.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title reveal">Nossos Diferenciais</h2>
+            <div class="services-grid">
+                <div class="topic-card reveal">
+                    <div class="topic-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>Equipe Especializada</h3>
+                    <p>Profissionais como a Master Stylist Juliana Lopes e o colorista Marcos Vinicius, sempre em atualização.</p>
+                </div>
+                <div class="topic-card reveal delay-2">
+                    <div class="topic-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Cada corte, cor e tratamento é pensado para o rosto, a textura e o estilo de vida da cliente.</p>
+                </div>
+                <div class="topic-card reveal delay-4">
+                    <div class="topic-icon"><i class="fa-solid fa-pump-soap"></i></div>
+                    <h3>Produtos de Alta Performance</h3>
+                    <p>Produtos profissionais com resultado visível, também disponíveis na linha Home Care.</p>
+                </div>
+                <div class="topic-card reveal">
+                    <div class="topic-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h3>Cronograma Capilar</h3>
+                    <p>Planejamento de hidratação, nutrição e reconstrução para a saúde dos fios a longo prazo.</p>
+                </div>
+                <div class="topic-card reveal delay-2">
+                    <div class="topic-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Agendamento Fácil</h3>
+                    <p>Horários marcados pelo site ou pelo WhatsApp, de forma rápida e sem complicação.</p>
+                </div>
+                <div class="topic-card reveal delay-4">
+                    <div class="topic-icon"><i class="fa-solid fa-couch"></i></div>
+                    <h3>Ambiente Acolhedor</h3>
+                    <p>Um espaço confortável, pensado para você relaxar enquanto cuidamos da sua autoestima.</p>
                 </div>
             </div>
         </div>
@@ -72,6 +138,7 @@
             <div>
                 <h4>Contato</h4>
                 <p><i class="fa-solid fa-phone"></i> (11) 98765-4321</p>
+                <p><i class="fa-solid fa-envelope"></i> contato@jeitodemulher.com.br</p>
                 <p><i class="fa-solid fa-location-dot"></i> Rua das Acácias, 120 - São Paulo, SP</p>
             </div>
             <div>
@@ -87,20 +154,7 @@
             <p>&copy; 2026 Jeito de Mulher. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script>
-        // Anima os elementos ao entrarem na tela
-        const items = document.querySelectorAll('.reveal');
-        if ('IntersectionObserver' in window) {
-            const io = new IntersectionObserver((entries) => {
-                entries.forEach(e => {
-                    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-                });
-            }, { threshold: 0.2 });
-            items.forEach(el => io.observe(el));
-        } else {
-            items.forEach(el => el.classList.add('visible'));
-        }
-    </script>
+    <script src="js/img-fallback.js"></script>
+    <script src="js/reveal.js"></script>
 </body>
 </html>

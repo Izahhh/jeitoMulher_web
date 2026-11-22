@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Jeito de Mulher</title>
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="img/icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="logo.jpg" alt="Logo Jeito de Mulher" class="logo-img">
+                <img src="img/logo.jpg" alt="Logo Jeito de Mulher" class="logo-img">
             </a>
             <nav class="nav-menu">
                 <a href="index.html">Início</a>
                 <a href="sobre.html">Sobre a Empresa</a>
                 <a href="produtos.html">Serviços e Produtos</a>
                 <a href="portfolio.html">Nosso Trabalho</a>
-                <a href="contato.html">Contato</a>
+                <a href="contato.html" class="active">Contato</a>
             </nav>
         </div>
     </header>
@@ -39,23 +39,23 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title reveal">Qual serviço você procura?</h2>
-            <p class="section-sub reveal" style="--delay:.1s;">Clique em uma opção para já preencher o formulário.</p>
+            <p class="section-sub reveal delay-1">Clique em uma opção para já preencher o formulário.</p>
 
             <div class="service-tiles">
-                <button type="button" class="tile reveal" style="--delay:0s;" data-service="Corte">
-                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600" alt="Corte feminino" loading="lazy">
+                <button type="button" class="tile reveal" data-service="Corte">
+                    <img src="img/corte-escova.jpg" data-fallback="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600" alt="Corte feminino" loading="lazy">
                     <div class="tile-info"><i class="fa-solid fa-scissors"></i><h3>Cortes</h3><p>Corte e styling pensados para o seu rosto.</p></div>
                 </button>
-                <button type="button" class="tile reveal" style="--delay:.12s;" data-service="Luzes">
-                    <img src="https://images.unsplash.com/photo-1605980766335-d3a41c7332a1?w=600" alt="Luzes e mechas" loading="lazy">
+                <button type="button" class="tile reveal delay-1" data-service="Luzes">
+                    <img src="img/platinado.jpg" data-fallback="https://images.unsplash.com/photo-1605980766335-d3a41c7332a1?w=600" alt="Luzes e mechas" loading="lazy">
                     <div class="tile-info"><i class="fa-solid fa-sun"></i><h3>Luzes</h3><p>Balayage, mechas e morena iluminada.</p></div>
                 </button>
-                <button type="button" class="tile reveal" style="--delay:.24s;" data-service="Coloração">
-                    <img src="https://images.unsplash.com/photo-1672788709547-6d7f239972c3?w=600" alt="Coloração" loading="lazy">
+                <button type="button" class="tile reveal delay-2" data-service="Coloração">
+                    <img src="img/coloracao-global.jpg" data-fallback="https://images.unsplash.com/photo-1672788709547-6d7f239972c3?w=600" alt="Coloração" loading="lazy">
                     <div class="tile-info"><i class="fa-solid fa-palette"></i><h3>Colorações</h3><p>Cor global, retoque de raiz e tonalização.</p></div>
                 </button>
-                <button type="button" class="tile reveal" style="--delay:.36s;" data-service="Tratamento">
-                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600" alt="Tratamento capilar" loading="lazy">
+                <button type="button" class="tile reveal delay-3" data-service="Tratamento">
+                    <img src="img/reconstrucao-capilar.jpg" data-fallback="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600" alt="Tratamento capilar" loading="lazy">
                     <div class="tile-info"><i class="fa-solid fa-spa"></i><h3>Tratamentos</h3><p>Reconstrução, nutrição e hidratação profunda.</p></div>
                 </button>
             </div>
@@ -66,27 +66,31 @@
     <section id="formulario" class="section bg-light">
         <div class="container contact-layout">
             <div>
-                <h2 class="section-title reveal" style="text-align:left; margin-bottom:1.5rem;">Fale Conosco</h2>
+                <h2 class="section-title title-left reveal">Fale Conosco</h2>
                 <div class="info-list">
-                    <a class="info-item reveal" style="--delay:0s;" href="tel:+5511987654321">
+                    <a class="info-item reveal" href="tel:+5511987654321">
                         <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
                         <span><small>Telefone</small><strong>(11) 98765-4321</strong></span>
                     </a>
-                    <a class="info-item reveal" style="--delay:.1s;" href="https://maps.google.com/?q=Rua das Acácias, 120 São Paulo SP" target="_blank" rel="noopener">
+                    <a class="info-item reveal delay-1" href="mailto:contato@jeitodemulher.com.br">
+                        <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span><small>E-mail</small><strong>contato@jeitodemulher.com.br</strong></span>
+                    </a>
+                    <a class="info-item reveal delay-1" href="https://maps.google.com/?q=Rua das Acácias, 120 São Paulo SP" target="_blank" rel="noopener">
                         <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
                         <span><small>Endereço</small><strong>Rua das Acácias, 120 - São Paulo, SP</strong></span>
                     </a>
-                    <a class="info-item reveal" style="--delay:.2s;" href="https://instagram.com" target="_blank" rel="noopener">
+                    <a class="info-item reveal delay-2" href="https://instagram.com" target="_blank" rel="noopener">
                         <span class="info-icon"><i class="fa-brands fa-instagram"></i></span>
                         <span><small>Instagram</small><strong>@jeitodemulher</strong></span>
                     </a>
                 </div>
-                <a class="btn-whats reveal" style="--delay:.3s;" href="https://wa.me/5511987654321" target="_blank" rel="noopener">
+                <a class="btn-whats reveal delay-3" href="https://wa.me/5511987654321" target="_blank" rel="noopener">
                     <i class="fa-brands fa-whatsapp fa-lg"></i> Chamar no WhatsApp
                 </a>
             </div>
 
-            <div class="contact-form reveal" style="--delay:.15s;">
+            <div class="contact-form reveal delay-1">
                 <h3>Envie uma mensagem</h3>
                 <form id="contact-form">
                     <div class="field">
@@ -135,6 +139,7 @@
             <div>
                 <h4>Contato</h4>
                 <p><i class="fa-solid fa-phone"></i> (11) 98765-4321</p>
+                <p><i class="fa-solid fa-envelope"></i> contato@jeitodemulher.com.br</p>
                 <p><i class="fa-solid fa-location-dot"></i> Rua das Acácias, 120 - São Paulo, SP</p>
             </div>
             <div>
@@ -150,39 +155,8 @@
             <p>&copy; 2026 Jeito de Mulher. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script>
-        // Animação de entrada ao rolar
-        const items = document.querySelectorAll('.reveal');
-        if ('IntersectionObserver' in window) {
-            const io = new IntersectionObserver(entries => {
-                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-            }, { threshold: 0.15 });
-            items.forEach(el => io.observe(el));
-        } else {
-            items.forEach(el => el.classList.add('visible'));
-        }
-
-        // Clicar numa imagem seleciona o serviço no formulário
-        const select = document.getElementById('servico');
-        document.querySelectorAll('.tile').forEach(tile => {
-            tile.addEventListener('click', () => {
-                select.value = tile.dataset.service;
-                document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' });
-                setTimeout(() => document.getElementById('nome').focus({ preventScroll: true }), 600);
-            });
-        });
-
-        // Envio: mostra confirmação animada e link para WhatsApp com a mensagem pronta
-        document.getElementById('contact-form').addEventListener('submit', e => {
-            e.preventDefault();
-            const nome = document.getElementById('nome').value;
-            const servico = select.value;
-            const msg = document.getElementById('mensagem').value;
-            const texto = `Olá! Meu nome é ${nome}. Interesse: ${servico}. ${msg}`;
-            document.getElementById('whats-link').href = 'https://wa.me/5511987654321?text=' + encodeURIComponent(texto);
-            document.getElementById('form-success').classList.add('show');
-        });
-    </script>
+    <script src="js/img-fallback.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/contato.js"></script>
 </body>
 </html>
